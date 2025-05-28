@@ -33,11 +33,13 @@
             nametxt = new TextBox();
             label2 = new Label();
             phonetxt = new TextBox();
+            txtEmail = new TextBox();
+            Email = new Label();
             SuspendLayout();
             // 
             // savebtn
             // 
-            savebtn.Location = new Point(109, 162);
+            savebtn.Location = new Point(27, 206);
             savebtn.Name = "savebtn";
             savebtn.Size = new Size(94, 29);
             savebtn.TabIndex = 0;
@@ -76,17 +78,35 @@
             phonetxt.Size = new Size(125, 27);
             phonetxt.TabIndex = 4;
             // 
-            // AddContactsForm
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(342, 167);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(125, 27);
+            txtEmail.TabIndex = 5;
+            // 
+            // Email
+            // 
+            Email.AutoSize = true;
+            Email.Location = new Point(195, 167);
+            Email.Name = "Email";
+            Email.Size = new Size(46, 20);
+            Email.TabIndex = 6;
+            Email.Text = "Email";
+            // 
+            // AddContactForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Email);
+            Controls.Add(txtEmail);
             Controls.Add(phonetxt);
             Controls.Add(label2);
             Controls.Add(nametxt);
             Controls.Add(label1);
             Controls.Add(savebtn);
-            Name = "AddContactsForm";
+            Name = "AddContactForm";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -99,5 +119,7 @@
         private TextBox nametxt;
         private Label label2;
         private TextBox phonetxt;
+        private TextBox txtEmail;
+        private Label Email;
     }
 }

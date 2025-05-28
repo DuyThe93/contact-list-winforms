@@ -1,4 +1,4 @@
-namespace ContactList
+﻿namespace ContactList
 {
     public partial class MainForm : Form
     {
@@ -11,5 +11,15 @@ namespace ContactList
         {
 
         }
+
+        private void btnAddContact_Click(object sender, EventArgs e)
+        {
+            using (var frm = new AddContactForm())
+            {
+                frm.ShowDialog();
+                // TODO: sau khi Lưu, có thể load lại danh sách liên hệ nếu cần
+            }
+        }
+
     }
 }

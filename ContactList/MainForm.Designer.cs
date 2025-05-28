@@ -41,7 +41,6 @@
             lblTitle.Size = new Size(194, 31);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Danh sách liên hệ";
-            lblTitle.Click += this.label1_Click;
             // 
             // btnAddContact
             // 

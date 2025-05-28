@@ -35,11 +35,12 @@
             phonetxt = new TextBox();
             txtEmail = new TextBox();
             Email = new Label();
+            lblAdditionalInfo = new Label();
             SuspendLayout();
             // 
             // savebtn
             // 
-            savebtn.Location = new Point(27, 206);
+            savebtn.Location = new Point(615, 369);
             savebtn.Name = "savebtn";
             savebtn.Size = new Size(94, 29);
             savebtn.TabIndex = 0;
@@ -94,11 +95,21 @@
             Email.TabIndex = 6;
             Email.Text = "Email";
             // 
+            // lblAdditionalInfo
+            // 
+            lblAdditionalInfo.AutoSize = true;
+            lblAdditionalInfo.Location = new Point(195, 254);
+            lblAdditionalInfo.Name = "lblAdditionalInfo";
+            lblAdditionalInfo.Size = new Size(129, 20);
+            lblAdditionalInfo.TabIndex = 7;
+            lblAdditionalInfo.Text = "Thông tin bổ sung";
+            // 
             // AddContactForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblAdditionalInfo);
             Controls.Add(Email);
             Controls.Add(txtEmail);
             Controls.Add(phonetxt);
@@ -121,5 +132,6 @@
         private TextBox phonetxt;
         private TextBox txtEmail;
         private Label Email;
+        private Label lblAdditionalInfo;
     }
 }
